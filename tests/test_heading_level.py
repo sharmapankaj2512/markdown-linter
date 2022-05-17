@@ -1,16 +1,12 @@
 import unittest
-from dataclasses import dataclass
+
+from test_links import NoWarning
 
 
 def lint_heading_level(text):
     if text.startswith("# "):
-        return [Heading()]
+        return [NoWarning()]
     return []
-
-
-@dataclass
-class Heading:
-    pass
 
 
 class HeadingLevelTestCase(unittest.TestCase):
@@ -18,7 +14,7 @@ class HeadingLevelTestCase(unittest.TestCase):
         self.assertEqual([], lint_heading_level("title\n"))
 
     def test_heading_level_one(self):
-        self.assertEqual([Heading()], lint_heading_level("# title\n"))
+        self.assertEqual([NoWarning()], lint_heading_level("# title\n"))
 
 
 if __name__ == '__main__':
