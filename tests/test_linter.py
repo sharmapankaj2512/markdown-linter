@@ -2,10 +2,7 @@ import unittest
 
 from heading_level import lint_heading_level
 from links import lint_links, NoWarning
-
-
-def flatten(t):
-    return [item for sublist in t for item in sublist]
+from lists import flatten
 
 
 def lint_line(text):
