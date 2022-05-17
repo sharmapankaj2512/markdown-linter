@@ -1,12 +1,7 @@
 import unittest
 
+from heading_level import lint_heading_level
 from links import NoWarning
-
-
-def lint_heading_level(text):
-    if text.startswith("# "):
-        return [NoWarning()]
-    return []
 
 
 class HeadingLevelTestCase(unittest.TestCase):

@@ -1,6 +1,6 @@
 import unittest
 
-from test_heading_level import lint_heading_level
+from heading_level import lint_heading_level
 from links import lint_links, NoWarning
 
 
