@@ -1,6 +1,6 @@
 import unittest
 
-from test_links import NoWarning
+from links import NoWarning
 
 
 def lint_heading_level(text):

@@ -1,7 +1,7 @@
 import unittest
 
 from test_heading_level import lint_heading_level
-from test_links import NoWarning, lint_links
+from links import lint_links, NoWarning
 
 
 def flatten(t):
