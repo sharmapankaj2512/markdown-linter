@@ -1,6 +1,6 @@
 import unittest
 
-from inter import lint
+from linter import lint
 from links import NoWarning
 
 
