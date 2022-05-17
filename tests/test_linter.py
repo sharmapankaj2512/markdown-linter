@@ -1,7 +1,7 @@
 import unittest
 
 from linter import lint
-from links import NoWarning
+from linter_warning import NoWarning
 
 
 class LinterTestCase(unittest.TestCase):

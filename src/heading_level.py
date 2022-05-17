@@ -1,4 +1,4 @@
-from links import NoWarning
+from linter_warning import NoWarning
 
 
 def lint_heading_level(text):

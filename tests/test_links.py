@@ -1,6 +1,7 @@
 import unittest
 
-from links import lint_links, NoWarning, MissingSquareBrackets
+from links import lint_links, MissingSquareBrackets
+from linter_warning import NoWarning
 
 
 class LinksTestCase(unittest.TestCase):

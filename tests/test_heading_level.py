@@ -1,7 +1,7 @@
 import unittest
 
 from heading_level import lint_heading_level
-from links import NoWarning
+from linter_warning import NoWarning
 
 
 class HeadingLevelTestCase(unittest.TestCase):
