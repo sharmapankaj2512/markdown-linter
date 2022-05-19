@@ -1,6 +1,6 @@
 import unittest
 
-from links import lint_links, MissingSquareBrackets
+from links import lint_links, MissingSquareBrackets, MissingParenthesis
 from linter_warning import NoWarning
 
 
@@ -14,6 +14,9 @@ class LinksTestCase(unittest.TestCase):
 
     def test_missing_square_brackets(self):
         self.assertEqual([MissingSquareBrackets()], lint_links("(https: // duckduckgo.com)"))
+
+    def test_missing_parenthesis(self):
+        self.assertEqual([MissingParenthesis()], lint_links("[Duck Duck Go]"))
 
 
 if __name__ == '__main__':

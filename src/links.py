@@ -8,9 +8,16 @@ def lint_links(text):
         return text.count("](") * [NoWarning()]
     if "(" in text:
         return [MissingSquareBrackets()]
+    if "[" in text:
+        return [MissingParenthesis()]
     return []
 
 
 @dataclasses.dataclass
 class MissingSquareBrackets:
+    pass
+
+
+@dataclasses.dataclass
+class MissingParenthesis:
     pass
